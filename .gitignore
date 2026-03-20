@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.backup
+
+# Paint files (temporary work files)
+*.paint
+
+# Python (development scripts only)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Local development server
+no_cache_server.py
+
+# Optimized images (keep originals)
+pissmissile_content/*.webp
+pissmissile_content/*.avif
+pissmissile_content/optimized/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Vite
+.vite/
+client/.env.example

@@ -1,0 +1,13 @@
+node_modules/
+.git/
+.github/
+*.py
+__pycache__/
+*.log
+.env*
+.vscode/
+.idea/
+*.md
+LICENSE
+.gitignore
+no_cache_server.py

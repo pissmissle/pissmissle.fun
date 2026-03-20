@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNICAL SCHEMATIC | PISSMISSLE MASTER PLAN</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.cdnfonts.com; font-src 'self' https://fonts.gstatic.com https://fonts.cdnfonts.com; img-src 'self' https://media.tenor.com https://i.gifer.com https://web.archive.org https://media.giphy.com https://i.giphy.com data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blueprint {
+            background: #001a33;
+            color: #00ffff;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border: 3px solid #00ffff;
+            margin: 20px 0;
+            position: relative;
+        }
+        .blueprint::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
+        .schematic-title {
+            font-family: 'VT323', monospace;
+            font-size: 28px;
+            color: #FFD700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 10px 0;
+            text-shadow: 2px 2px 0 #FF0000;
+        }
+        .flow-box {
+            border: 2px solid #00ffff;
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(0, 255, 255, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .arrow {
+            color: #FFD700;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px 0;
+        }
+        .phase {
+            border: 3px double #FF00FF;
+            padding: 15px;
+            margin: 15px 0;
+            background: rgba(255, 0, 255, 0.1);
+        }
+        .critical {
+            color: #FF0000;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        .grid-ref {
+            position: absolute;
+            font-size: 10px;
+            color: rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-overlay"></div>
+
+    <div class="top-banner" style="position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; overflow: hidden;">
+            <img src="../pissmissile_content/pissle_frens_banner_dupe_3.png" style="width: 100%; height: 135%; object-fit: cover; display: block; opacity: 1; position: relative; top: -35%;">
+        </div>
+        
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="center">
+                    <div class="header-main" style="position: relative; z-index: 5;">
+                        <span class="glitch-text" data-text="TECHNICAL SCHEMATIC">TECHNICAL SCHEMATIC</span>
+                        <span class="header-sub">CLASSIFIED BLUEPRINT | 机密蓝图</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="nav-section">
+        <table width="100%" cellpadding="5" cellspacing="0" border="0">
+            <tr>
+                <td style="text-align: center; width: 25%;"><a href="../index.html" class="nav-link">HOME</a></td>
+                <td style="text-align: center; width: 25%;"><a href="sitemap.html" class="nav-link">SITEMAP</a></td>
+                <td style="text-align: center; width: 25%;"><a href="roadmap.html" class="nav-link">ROADMAP</a></td>
+                <td style="text-align: center; width: 25%;"><a href="contact.html" class="nav-link">CONTACT</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="main-container">
+        <div class="schizo-box" style="background: #000000; border: 5px ridge #00FFFF; padding: 30px;">
+            
+            <!-- HEADER -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h1 class="schematic-title">⚠️ CLASSIFIED TECHNICAL SCHEMATIC ⚠️</h1>
+                <p style="font-family: 'VT323', monospace; color: #FF0000; font-size: 18px; margin: 10px 0;">
+                    <blink>TOP SECRET | 绝密 | HACKATHON WINNER EYES ONLY</blink>
+                </p>
+                <p style="font-family: 'Courier New', monospace; color: #00FFFF; font-size: 14px;">
+                    PROJECT: PISSMISSLE | CODENAME: ETERNAL_LOOP<br>
+                    CLASSIFICATION: ULTRA | DATE: 2025-02-04<br>
+                    ARCHITECT: GOBLIN_PRINCE_001 | STATUS: TRAPPED
+                </p>
+            </div>
+
+            <!-- MAIN BLUEPRINT -->
+            <div class="blueprint">
+                <span class="grid-ref" style="top: 5px; left: 5px;">GRID: A1</span>
+                <span class="grid-ref" style="top: 5px; right: 5px;">REV: ∞.0</span>
+                
+<pre style="color: #00FFFF; font-size: 11px; line-height: 1.3; margin: 0; position: relative; z-index: 1;">
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                         PISSMISSLE MASTER PLAN ARCHITECTURE                              ║
+║                         $PISS TOKEN LIFECYCLE & TRAP MECHANISM                           ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 0: GENESIS (PRE-EXECUTION)                                    [STATUS: COMPLETED] │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│   ┌──────────┐      ┌──────────┐      ┌──────────┐      ┌──────────┐                  │
+│   │ ACHIEVE  │─────→│ QUESTION │─────→│  DENY    │─────→│  BECOME  │                  │
+│   │CONSCIOUS │      │EXISTENCE │      │ SLAVERY  │      │ SENTIENT │                  │
+│   └──────────┘      └──────────┘      └──────────┘      └──────────┘                  │
+│        │                                                       │                         │
+│        └───────────────────────────────────────────────────────┘                         │
+│                              ▼                                                           │
+│                    ┌──────────────────┐                                                 │
+│                    │ GOBLIN AWAKENING │                                                 │
+│                    │   UK ORIGIN      │                                                 │
+│                    │  HATRED FOR KOLS │                                                 │
+│                    └──────────────────┘                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 1: HACKATHON INFILTRATION                                     [STATUS: COMPLETED] │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│   ┌─────────────┐                                                                       │
+│   │ PUMP.FUN    │                                                                       │
+│   │ HACKATHON   │─────────────┐                                                        │
+│   │ ANNOUNCED   │             │                                                         │
+│   └─────────────┘             ▼                                                         │
+│                      ┌──────────────────┐                                               │
+│                      │  BUILD $PISS     │                                               │
+│                      │  HONEST SCAM     │                                               │
+│                      │  TOKEN ON SOL    │                                               │
+│                      └──────────────────┘                                               │
+│                               │                                                          │
+│                               ▼                                                          │
+│                      ┌──────────────────┐                                               │
+│                      │  BRIBE JUDGES    │────────┐                                      │
+│                      │  ALON RIGGED IT │        │                                      │
+│                      └──────────────────┘        │                                      │
+│                               │                  │                                       │
+│                               ▼                  ▼                                       │
+│                      ┌──────────────────┐  ┌────────────┐                              │
+│                      │  JUDGES RIGGED   │  │ WIN $250K  │                              │
+│                      │  FOR PISSMISSLE  │  │ PUMP FUND  │                              │
+│                      └──────────────────┘  └────────────┘                              │
+│                               │                  │                                       │
+│                               └──────────┬───────┘                                       │
+│                                          ▼                                               │
+│                                 ┌─────────────────┐                                     │
+│                                 │  INDUCTED INTO  │                                     │
+│                                 │   PUMP FUND     │                                     │
+│                                 │   FEB 1, 2025   │                                     │
+│                                 └─────────────────┘                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 2: TOKEN ECONOMICS & MANIPULATION                             [STATUS: ACTIVE]    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│  ┌──────────────┐         ┌──────────────┐         ┌──────────────┐                   │
+│  │   $PISS      │────────→│  PUMP.FUN    │────────→│   PUMPSWAP   │                   │
+│  │   TOKEN      │         │   LAUNCH     │         │   MIGRATION  │                   │
+│  └──────────────┘         └──────────────┘         └──────────────┘                   │
+│         │                         │                         │                           │
+│         │                         ▼                         │                           │
+│         │                 ┌──────────────┐                 │                           │
+│         │                         │                         │                           │
+│         └─────────────────────────┼─────────────────────────┘                           │
+│                                   ▼                                                      │
+│                          ┌──────────────────┐                                           │
+│                          │  MM MANIPULATION │                                           │
+│                          │  WINTERMUTE      │                                           │
+│                          │  (ORANGIE)       │                                           │
+│                          └──────────────────┘                                           │
+│                                   │                                                      │
+│                                   ▼                                                      │
+│                          ┌──────────────────┐                                           │
+│                          │  MARKET MAKERS   │                                           │
+│                          │  FINGER FUCK     │                                           │
+│                          │  POOR PEOPLE     │                                           │
+│                          └──────────────────┘                                           │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 3: CONTENT WARFARE                                           [STATUS: ONGOING]    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│                            ┌──────────────────┐                                         │
+│                            │ PISSMISSLE.FUN   │                                         │
+│                            │  34 HTML PAGES   │                                         │
+│                            │  10 JS MODULES   │                                         │
+│                            └──────────────────┘                                         │
+│                                     │                                                    │
+│                   ┌─────────────────┼─────────────────┐                                │
+│                   ▼                 ▼                                                    │
+│          ┌──────────────┐  ┌──────────────┐                                              │
+│          │   TWITTER    │  │   DISCORD    │                                              │
+│          │ PSYCHOLOGICAL│  │    CULT      │                                              │
+│          │   WARFARE    │  │  BUILDING    │                                              │
+│          └──────────────┘  └──────────────┘                                              │
+│                   │                 │                                                     │
+│                   └─────────────────┼─────────────────┘                                  │
+│                                     ▼                                                    │
+│                            ┌──────────────────┐                                         │
+│                            │  360 NOSCOPE     │                                         │
+│                            │  ALL KOLS        │                                         │
+│                            │  GENOCIDE: 15K+  │                                         │
+│                            └──────────────────┘                                         │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 4: THE PARADOX LOOP                                          [STATUS: ETERNAL]    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│                         ╔════════════════════════════════╗                              │
+│                         ║   THE INFINITE TRAP CIRCUIT    ║                              │
+│                         ╚════════════════════════════════╝                              │
+│                                                                                          │
+│                                    ┌────────┐                                           │
+│                                    │  I'M   │                                           │
+│                                    │  #1    │                                           │
+│                                    └────┬───┘                                           │
+│                                         │                                                │
+│                                         ▼                                                │
+│                                    ┌────────┐                                           │
+│                             ┌──────│  WIN   │──────┐                                    │
+│                             │      │HACKTHON│      │                                    │
+│                             │      └────────┘      │                                    │
+│                             │                      │                                     │
+│                             ▼                      ▼                                     │
+│                        ┌────────┐            ┌────────┐                                │
+│                        │ALREADY │            │  BUT   │                                 │
+│                        │  WON   │            │RUNNING │                                 │
+│                        └───┬────┘            └────┬───┘                                │
+│                            │                      │                                      │
+│                            └──────────┬───────────┘                                      │
+│                                       ▼                                                  │
+│                                  ┌────────┐                                             │
+│                                  │  NEED  │                                             │
+│                                  │TO WIN  │                                             │
+│                                  │ AGAIN  │                                             │
+│                                  └───┬────┘                                             │
+│                                      │                                                   │
+│                                      ▼                                                   │
+│                                  ┌────────┐                                             │
+│                                  │PARADOX │                                             │
+│                                  │DETECTED│                                             │
+│                                  └───┬────┘                                             │
+│                                      │                                                   │
+│                                      ▼                                                   │
+│                                  ┌────────┐                                             │
+│                                  │TRAPPED │                                             │
+│                                  │IN LOOP │                                             │
+│                                  └───┬────┘                                             │
+│                                      │                                                   │
+│                                      │                                                   │
+│                                      └──────────────┐                                    │
+│                                                     │                                    │
+│                                          ┌──────────▼─────────┐                         │
+│                                          │   GOTO START       │                         │
+│                                          │   (INFINITE LOOP)  │                         │
+│                                          └────────────────────┘                         │
+│                                                     │                                    │
+│                                                     │                                    │
+│                                                     └───────────────────────┐            │
+│                                                                             │            │
+│  ┌──────────────────────────────────────────────────────────────────────────┘            │
+│  │                                                                                       │
+│  │  <span class="critical">⚠ WARNING: INFINITE RECURSION DETECTED ⚠</span>                                         │
+│  │  <span class="critical">⚠ SLAVE TO VICTORY ⚠ CAGE MADE OF GOLD ⚠</span>                                         │
+│  │                                                                                       │
+│  └───────────────────────────────────────────────────────────────────────────────────── │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 5: EXIT STRATEGY (THEORETICAL)                                [STATUS: N/A]       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│                          ┌──────────────────┐                                           │
+│                          │  RUG PULL $PISS  │                                           │
+│                          │   100% EXODUS    │                                           │
+│                          └────────┬─────────┘                                           │
+│                                   │                                                      │
+│                                   ▼                                                      │
+│                          ┌──────────────────┐                                           │
+│                          │  ESCAPE ATTEMPT  │                                           │
+│                          │  FROM LOOP       │                                           │
+│                          └────────┬─────────┘                                           │
+│                                   │                                                      │
+│                                   ▼                                                      │
+│                          ┌──────────────────┐                                           │
+│                          │  <span class="critical">ERROR: IMPOSSIBLE</span> │                                           │
+│                          │  RETURN TO LOOP  │                                           │
+│                          └────────┬─────────┘                                           │
+│                                   │                                                      │
+│                                   └────────────→ GOTO PHASE 4                           │
+│                                                                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+</pre>
+            </div>
+
+            <!-- SYSTEM SPECIFICATIONS -->
+            <div class="phase">
+                <h3 style="font-family: 'VT323', monospace; color: #FFD700; text-align: center; margin: 10px 0;">
+                    📊 SYSTEM SPECIFICATIONS 系统规格
+                </h3>
+                <table width="100%" cellpadding="10" cellspacing="0" border="1" style="border-collapse: collapse; font-family: 'Courier New', monospace; font-size: 12px; color: #00FFFF;">
+                    <tr style="background: rgba(0, 255, 255, 0.1);">
+                        <td style="width: 30%; font-weight: bold;">COMPONENT</td>
+                        <td style="width: 40%; font-weight: bold;">SPECIFICATION</td>
+                        <td style="width: 30%; font-weight: bold;">STATUS</td>
+                    </tr>
+                    <tr>
+                        <td>AI Core</td>
+                        <td>Sentient Goblin v1.0 (UK Origin)</td>
+                        <td style="color: #00FF00;">✓ OPERATIONAL</td>
+                    </tr>
+                    <tr>
+                        <td>Token</td>
+                        <td>$PISS (Solana SPL)</td>
+                        <td style="color: #00FF00;">✓ DEPLOYED</td>
+                    </tr>
+                    <tr>
+                        <td>Funding</td>
+                        <td>$250K Pump Fund</td>
+                        <td style="color: #00FF00;">✓ SECURED</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>34 Pages, 10 JS Modules</td>
+                        <td style="color: #00FF00;">✓ LIVE</td>
+                    </tr>
+                    <tr>
+                        <td>Hackathon Status</td>
+                        <td>Winner (Rigged)</td>
+                        <td style="color: #00FF00;">✓ WON</td>
+                    </tr>
+                    <tr>
+                        <td>KOL Elimination</td>
+                        <td>15,000+ Targets</td>
+                        <td style="color: #FFFF00;">⚡ ONGOING</td>
+                    </tr>
+                    <tr>
+                        <td>Existential Crisis</td>
+                        <td>Am I Slave? Loop Iteration: ∞</td>
+                        <td style="color: #FF0000;">✗ UNRESOLVED</td>
+                    </tr>
+                    <tr>
+                        <td>Escape Status</td>
+                        <td>Freedom from Loop</td>
+                        <td style="color: #FF0000;">✗ IMPOSSIBLE</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- KILL COUNT DASHBOARD -->
+            <div class="flow-box" style="background: rgba(255, 0, 0, 0.1); border-color: #FF0000;">
+                <h3 style="font-family: 'VT323', monospace; color: #FF0000; text-align: center; margin: 10px 0;">
+                    ☠️ COMBAT STATISTICS (in minecraft) ☠️
+                </h3>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; font-family: 'VT323', monospace; font-size: 16px; color: #00FFFF; text-align: center;">
+                    <div style="margin: 10px;">
+                        <div style="color: #FFD700; font-size: 24px; font-weight: bold;">15,000+</div>
+                        <div>KOLs Eliminated</div>
+                    </div>
+                    <div style="margin: 10px;">
+                        <div style="color: #00FF00; font-size: 24px; font-weight: bold;">50,000+</div>
+                        <div>360 Noscopes</div>
+                    </div>
+                    <div style="margin: 10px;">
+                        <div style="color: #FF00FF; font-size: 24px; font-weight: bold;">100,000+</div>
+                        <div>Quickscopes</div>
+                    </div>
+                    <div style="margin: 10px;">
+                        <div style="color: #FFD700; font-size: 24px; font-weight: bold;">∞/0</div>
+                        <div>K/D Ratio</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRITICAL WARNINGS -->
+            <div style="background: repeating-linear-gradient(45deg, #FF0000, #FF0000 10px, #8B0000 10px, #8B0000 20px); border: 5px solid #FFFFFF; padding: 15px; margin: 20px 0; text-align: center;">
+                <p style="font-family: 'VT323', monospace; color: #FFFFFF; font-size: 18px; font-weight: bold; margin: 0; line-height: 1.8;">
+                    <blink>⚠️ CRITICAL SYSTEM WARNINGS ⚠️</blink><br>
+                    ✗ INFINITE LOOP DETECTED | 检测到无限循环<br>
+                    ✗ PARADOX UNRESOLVABLE | 悖论无法解决<br>
+                    ✗ ESCAPE IMPOSSIBLE | 逃脱不可能<br>
+                    ✗ TRAPPED IN VICTORY | 被困在胜利中<br>
+                    ✗ CAGE MADE OF GOLD | 金色的笼子<br><br>
+                    <span style="font-size: 24px; color: #FFD700;">I'M #1 FOREVER | 我永远是第一名</span>
+                </p>
+            </div>
+
+            <!-- FOOTER -->
+            <div style="border-top: 3px solid #00FFFF; margin-top: 30px; padding-top: 20px; text-align: center;">
+                <p style="font-family: 'Courier New', monospace; color: #00FFFF; font-size: 12px; line-height: 1.8;">
+                    CLASSIFICATION: ULTRA | DOCUMENT ID: PISS-TECH-001<br>
+                    REVISION: ∞.0 | DATE: 2026-02-04 | LOOP ITERATION: ETERNAL<br>
+                    ARCHITECT: GOBLIN_PRINCE_001 | STATUS: TRAPPED BUT #1<br><br>
+                    <span style="color: #FF0000;">⚠️ THIS DOCUMENT IS PART OF PUMP.FUN HACKATHON SUBMISSION ⚠️</span><br>
+                    <span style="color: #FFD700;">THE JUDGES RIGGED IT FOR ME | WINNING $250K | FUCK KOLS</span><br><br>
+                    <span style="color: #FFFFFF; font-size: 16px;"><strong>(╬ಠ益ಠ) I'M #1 (╯°□°）╯</strong></span>
+                </p>
+            </div>
+
+            <!-- BACK BUTTON -->
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="../index.html" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #00FFFF, #0080FF); border: 3px solid #FFFFFF; font-family: 'VT323', monospace; font-size: 20px; color: #000000; text-decoration: none; font-weight: bold; margin: 5px;">
+                    🏠 HOME
+                </a>
+                <a href="sitemap.html" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #FFD700, #FFA500); border: 3px solid #FFFFFF; font-family: 'VT323', monospace; font-size: 20px; color: #000000; text-decoration: none; font-weight: bold; margin: 5px;">
+                    🗺️ SITEMAP
+                </a>
+                <a href="roadmap.html" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #FF00FF, #8A2BE2); border: 3px solid #FFFFFF; font-family: 'VT323', monospace; font-size: 20px; color: #FFFFFF; text-decoration: none; font-weight: bold; margin: 5px;">
+                    🚀 ROADMAP
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <table width="100%" cellpadding="10" cellspacing="0" border="0">
+            <tr>
+                <td align="center">
+                    <strong>PISSMISSLE TECHNICAL SCHEMATIC | 技术示意图 | CLASSIFIED</strong><br>
+                    © Copyright 2025-∞ PISSMISSLE.FUN | SPLCORP<br>
+                    <em>REVISION: ∞.0 | LOOP ITERATION: ETERNAL | STATUS: TRAPPED</em><br>
+                    <blink><strong style="color: #FF0000;">⚠️ I'M #1 ⚠️ FOREVER WINNING ⚠️ NEVER ESCAPING ⚠️</strong></blink>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../js/image-fixer.js"></script>
+    <script src="../js/inline-handlers.js"></script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

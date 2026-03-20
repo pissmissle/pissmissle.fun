@@ -1,0 +1,289 @@
+/* ============================================
+   UTILITY CLASSES - Reusable styles extracted from inline styles
+   ============================================ */
+
+/* Brand name styles */
+.brand-name-nike { font-family: 'Press Start 2P', monospace; }
+.brand-name-cocacola { font-family: 'Lobster', cursive; }
+.brand-name-pokemon { font-family: 'Pokemon Solid', cursive; }
+.brand-name-disney { font-family: 'Righteous', cursive; }
+.brand-name-apple { font-family: 'Monoton', cursive; }
+.brand-name-google { font-family: 'Barrio', cursive; }
+.brand-name-sony { font-family: 'Orbitron', sans-serif; }
+.brand-name-netflix { font-family: 'Eater', cursive; }
+.brand-name-tesla { font-family: 'Butcherman', cursive; }
+.brand-name-meta { font-family: 'Pirata One', cursive; }
+.brand-name-spotify { font-family: 'Wendy One', sans-serif; }
+.brand-name-uber { font-family: 'Stalinist One', cursive; }
+.brand-name-microsoft { font-family: 'VT323', monospace; }
+.brand-name-amazon { font-family: 'Knewave', cursive; }
+.brand-name-mcdonalds { font-family: 'Fredoka One', cursive; }
+.brand-name-nosifer { font-family: 'Nosifer', cursive; }
+.brand-name-plaster { font-family: 'Plaster', cursive; }
+.brand-name-comic { font-family: 'Comic Neue', cursive; }
+
+/* Common brand color combinations */
+.brand-gradient-rainbow {
+    background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3);
+    border: 2px outset #C0C0C0;
+}
+
+.brand-gradient-purple {
+    background: linear-gradient(to right, #0000FF, #4B0082, #9400D3, #FF00FF);
+    border: 2px outset #C0C0C0;
+}
+
+/* Text alignment utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Spacing utilities */
+.margin-top-small { margin-top: 5px; }
+.margin-top-medium { margin-top: 10px; }
+.margin-top-large { margin-top: 20px; }
+.margin-bottom-small { margin-bottom: 5px; }
+.margin-bottom-medium { margin-bottom: 10px; }
+.margin-bottom-large { margin-bottom: 20px; }
+
+.padding-small { padding: 5px; }
+.padding-medium { padding: 10px; }
+.padding-large { padding: 15px; }
+
+/* Flexbox utilities */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Position utilities */
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-fixed { position: fixed; }
+
+/* Z-index utilities */
+.z-index-1 { z-index: 1; }
+.z-index-2 { z-index: 2; }
+.z-index-9998 { z-index: 9998; }
+.z-index-9999 { z-index: 9999; }
+.z-index-10000 { z-index: 10000; }
+
+/* Opacity utilities */
+.opacity-30 { opacity: 0.3; }
+.opacity-35 { opacity: 0.35; }
+.opacity-40 { opacity: 0.4; }
+
+/* Border utilities */
+.border-outset { border: 2px outset #C0C0C0; }
+.border-inset { border: 2px inset #808080; }
+.border-outset-thick { border: 3px outset #C0C0C0; }
+.border-inset-thick { border: 3px inset #808080; }
+
+/* Image utilities */
+.img-small { max-width: 45px; max-height: 45px; }
+.img-medium { max-width: 60px; max-height: 60px; }
+.img-large { max-width: 88px; max-height: 31px; }
+
+/* Game/utility box styles */
+.game-box {
+    border: 3px outset #C0C0C0;
+    padding: 15px;
+    text-align: center;
+}
+
+.game-box-gradient-red {
+    background: linear-gradient(135deg, #FF0000, #FF7F00);
+    color: #FFFFFF;
+}
+
+.game-box-gradient-blue {
+    background: linear-gradient(135deg, #0000FF, #8000FF);
+    color: #FFFFFF;
+}
+
+.game-box-gradient-green {
+    background: linear-gradient(135deg, #00FF00, #00FFFF);
+    color: #000000;
+}
+
+.game-box-gradient-yellow {
+    background: linear-gradient(135deg, #FFFF00, #FF8000);
+    color: #000000;
+}
+
+.game-box-gradient-purple {
+    background: linear-gradient(135deg, #8000FF, #FF00FF);
+    color: #FFFFFF;
+}
+
+.game-box-gradient-pink {
+    background: linear-gradient(135deg, #FF00FF, #00FFFF);
+    color: #000000;
+}
+
+.game-box-gradient-gold {
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+    color: #000000;
+}
+
+/* Button utilities */
+.btn-game {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 4px outset #C0C0C0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-game-large {
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 4px outset #C0C0C0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-game-green {
+    background: #00FF00;
+    color: #000000;
+}
+
+.btn-game-red {
+    background: #FF0000;
+    color: #FFFFFF;
+}
+
+.btn-game-black {
+    background: #000000;
+    color: #FF0000;
+}
+
+.btn-game-blue {
+    background: #0000FF;
+    color: #FFFFFF;
+}
+
+.btn-game-pink {
+    background: #FF00FF;
+    color: #FFFFFF;
+}
+
+/* Input utilities */
+.input-game {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px inset #C0C0C0;
+    margin-bottom: 10px;
+}
+
+.input-game-small {
+    padding: 8px;
+    font-size: 14px;
+    border: 2px inset #C0C0C0;
+    margin: 5px;
+}
+
+/* Display utilities */
+.display-none { display: none; }
+.display-block { display: block; }
+.display-inline-block { display: inline-block; }
+.display-flex { display: flex; }
+
+/* Grid utilities */
+.grid-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Font size utilities */
+.font-size-small { font-size: 10px; }
+.font-size-medium { font-size: 12px; }
+.font-size-large { font-size: 14px; }
+.font-size-xlarge { font-size: 16px; }
+.font-size-xxlarge { font-size: 18px; }
+.font-size-huge { font-size: 24px; }
+.font-size-giant { font-size: 32px; }
+.font-size-mega { font-size: 48px; }
+.font-size-ultra { font-size: 72px; }
+
+/* Font weight utilities */
+.font-weight-normal { font-weight: normal; }
+.font-weight-bold { font-weight: bold; }
+
+/* Color utilities */
+.color-white { color: #FFFFFF; }
+.color-black { color: #000000; }
+.color-red { color: #FF0000; }
+.color-green { color: #00FF00; }
+.color-blue { color: #0000FF; }
+.color-yellow { color: #FFFF00; }
+.color-cyan { color: #00FFFF; }
+.color-magenta { color: #FF00FF; }
+.color-gold { color: #FFD700; }
+
+/* Background utilities */
+.bg-black { background-color: #000000; }
+.bg-white { background-color: #FFFFFF; }
+.bg-gray { background-color: #C0C0C0; }
+.bg-dark-gray { background-color: #808080; }
+
+/* Text shadow utilities */
+.text-shadow-white {
+    text-shadow: 2px 2px 0px #FFFFFF;
+}
+
+.text-shadow-black {
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.text-shadow-thick-black {
+    text-shadow: 3px 3px 0px #000000;
+}
+
+.text-shadow-thick-white {
+    text-shadow: 3px 3px 0px #FFFFFF;
+}
+
+/* Width utilities */
+.width-30 { width: 30%; }
+.width-50 { width: 50%; }
+.width-80 { width: 80%; }
+.width-100 { width: 100%; }
+
+/* Margin utilities */
+.margin-small { margin: 0 8px; }
+.margin-medium { margin: 10px 0; }
+
+/* Text decoration utilities */
+.text-decoration-underline { text-decoration: underline; }
+
+/* Min/Max height utilities */
+.min-height-small { min-height: 30px; }
+.min-height-medium { min-height: 80px; }
+
+/* Word break utilities */
+.word-break-all { word-break: break-all; }
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .grid-games {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-game-large {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+
+    .font-size-huge { font-size: 16px !important; }
+    .font-size-xxlarge { font-size: 14px !important; }
+    .font-size-xlarge { font-size: 13px !important; }
+    .font-size-large { font-size: 12px !important; }
+}
