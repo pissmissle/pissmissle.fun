@@ -43,6 +43,7 @@
                         '<tr><td class="ie6-cell">* <a href="https://forum.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Agent Forum (代理论坛)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="/pages/whitepaper.html" style="color: #0000EE;">Documentation (文档资料)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="/pages/sitemap.html" style="color: #0000EE;">Sitemap (网站地图)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">* <a href="https://github.com/pissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">GitHub (代码)</a></td></tr>' +
                         '<tr><td class="ie6-cell" style="border-top: 1px dashed #8899aa; padding-top: 6px;"><b style="font-family: \'Tahoma\', sans-serif; font-size: 10px; color: #CC0000;">Official CA (官方合约):</b></td></tr>' +
                         '<tr><td class="ie6-cell" style="padding-top: 2px;"><span style="font-family: \'Courier New\', monospace; font-size: 10px; color: #333; word-break: break-all; user-select: all;">TBD</span></td></tr>' +
                     '</table>' +
@@ -184,7 +185,7 @@
             title: 'KOL HALL OF SHAME KOL耻辱堂 - Microsoft Internet Explorer',
             render: function() {
                 var kols = [
-                    { name: 'RAJ GOKUL', crime: 'KOL scammer / KOL骗子', status: 'PISSMISSILED' },
+                    { name: 'RAJ GOKUL', crime: 'KOL scammer / KOL骗子', status: 'PISSMISSLED' },
                     { name: 'SAM BANKMAN', crime: 'Stole everything / 偷了一切', status: 'IN JAIL' },
                     { name: 'SONIC THE HEDGEHOG', crime: 'Runs from taxes / 逃税', status: 'TOO FAST' },
                     { name: 'THAT GUY FROM JUP', crime: 'Fraud / 骗子', status: 'LOSER' },
@@ -205,7 +206,7 @@
                     '<p style="text-align: center; font-size: 10px; color: #999; margin: 0 0 8px;">PARASITES, SCAMMERS, AND ENEMIES OF TRADERS // 寄生虫、骗子和交易者的敌人</p>' +
                     '<hr style="border: none; border-top: 1px dashed #aabbcc; margin: 0 0 8px;">' +
                     '<div style="background: #FFFFCC; border: 1px solid #CC0000; padding: 6px; margin: 0 0 8px; text-align: center; font-size: 11px;">' +
-                        '<blink style="color: #CC0000; font-weight: bold;">⚠ THESE PEOPLE DESERVE PISSMISSILES ⚠ 这些人应该被尿导弹击中</blink>' +
+                        '<blink style="color: #CC0000; font-weight: bold;">⚠ THESE PEOPLE DESERVE PISSMISSLES ⚠ 这些人应该被尿导弹击中</blink>' +
                     '</div>' +
                     '<table cellpadding="0" cellspacing="0" border="0" style="width: 100%; margin: 0 0 8px;">' +
                         '<tr style="background: #8B0000; color: #FFF;">' +
@@ -241,7 +242,7 @@
                     '<hr style="border: none; border-top: 1px dashed #aabbcc; margin: 0 0 10px;">' +
 
                     '<div style="background: rgba(255,255,255,0.5); border: 2px outset #C0C0C0; padding: 8px; margin: 0 0 8px;">' +
-                        '<b style="color: #000080;">🎰 PISSMISSILE SLOT MACHINE 老虎机</b><br>' +
+                        '<b style="color: #000080;">🎰 PISSMISSLE SLOT MACHINE 老虎机</b><br>' +
                         '<div id="ie6-slots" style="background: #000; color: #0F0; font-family: \'Courier New\', monospace; font-size: 20px; text-align: center; padding: 8px; margin: 4px 0; border: 2px inset #808080; letter-spacing: 8px;">? ? ?</div>' +
                         '<div style="text-align: center;"><button type="button" id="ie6-spin" style="background: #C0C0C0; border: 2px outset #FFF; padding: 3px 16px; font-family: \'Tahoma\', sans-serif; font-size: 11px; cursor: pointer;">SPIN (转)</button></div>' +
                         '<p id="ie6-slots-result" style="text-align: center; font-size: 11px; margin: 4px 0 0; min-height: 16px;"></p>' +
@@ -313,9 +314,9 @@
                         var name = kolInput.value.trim();
                         if (!name) { kolResult.textContent = 'Enter a name, retard. 输入一个名字，智障.'; return; }
                         var results = [
-                            'CONFIRMED KOL. 确认是KOL. DEPLOYING PISSMISSILE. 部署尿导弹. 🚀',
+                            'CONFIRMED KOL. 确认是KOL. DEPLOYING PISSMISSLE. 部署尿导弹. 🚀',
                             'NOT A KOL. 不是KOL. BUT STILL SUSPICIOUS. 但仍然可疑. 🤔',
-                            '99.7% KOL PROBABILITY. 99.7% KOL概率. PISSMISSILE LOCKED ON. 尿导弹锁定. 🎯',
+                            '99.7% KOL PROBABILITY. 99.7% KOL概率. PISSMISSLE LOCKED ON. 尿导弹锁定. 🎯',
                             'UNKNOWN. 未知. PROBABLY A KOL IN DISGUISE. 可能是伪装的KOL. 🕵️',
                             'DEFINITELY A KOL. 肯定是KOL. I CAN SMELL THE SCAM. 我能闻到骗局的味道. 💩',
                             'CLEAN! 干净! A REAL TRADER! 一个真正的交易者! WELCOME KING! 欢迎国王! 👑',
