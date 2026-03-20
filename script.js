@@ -31,14 +31,9 @@ const obsceneMarqueeMessages = [
 ];
 
 function updateMarqueeText() {
-    const marqueeElements = document.querySelectorAll('marquee.marquee-banner blink, marquee.marquee-banner');
+    const marqueeElements = document.querySelectorAll('marquee.marquee-banner');
     marqueeElements.forEach(marquee => {
-        const blinkElement = marquee.querySelector('blink');
-        if (blinkElement) {
-            blinkElement.textContent = obsceneMarqueeMessages[Math.floor(Math.random() * obsceneMarqueeMessages.length)];
-        } else {
-            marquee.textContent = obsceneMarqueeMessages[Math.floor(Math.random() * obsceneMarqueeMessages.length)];
-        }
+        marquee.textContent = obsceneMarqueeMessages[Math.floor(Math.random() * obsceneMarqueeMessages.length)];
     });
 }
 
