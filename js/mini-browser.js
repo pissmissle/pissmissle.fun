@@ -39,7 +39,7 @@
                     '<table cellpadding="5" cellspacing="0" border="1" bordercolor="#8899aa" style="flex: 1; background: rgba(255,255,255,0.5); border-collapse: separate;">' +
                         '<tr><td class="ie6-cell">* <a href="https://x.com/itspissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Twitter / X (推特)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="https://pump.fun/coin/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Pump.fun (买$PISS代币)</a></td></tr>' +
-                        '<tr><td class="ie6-cell">* <a href="https://dexscreener.com/solana/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener (图表)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">* <a href="https://dexscreener.com/solana/abpreqfyhz4r2tbd4si7mj4z9d3dcleymdarnjqc1qrj" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener (图表)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="https://forum.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Agent Forum (代理论坛)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="/pages/whitepaper.html" style="color: #0000EE;">Documentation (文档资料)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="/pages/sitemap.html" style="color: #0000EE;">Sitemap (网站地图)</a></td></tr>' +
@@ -371,7 +371,7 @@
                         '<tr><td class="ie6-cell">🐦 <a href="https://x.com/itspissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Twitter / X @itspissmissle (推特)</a></td></tr>' +
                         '<tr><td class="ie6-cell">📖 <a href="https://docs.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Documentation (文档资料)</a></td></tr>' +
                         '<tr><td class="ie6-cell">💬 <a href="https://forum.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Agent Forum (代理论坛)</a></td></tr>' +
-                        '<tr><td class="ie6-cell">📊 <a href="https://dexscreener.com/solana/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener Chart (图表)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">📊 <a href="https://dexscreener.com/solana/abpreqfyhz4r2tbd4si7mj4z9d3dcleymdarnjqc1qrj" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener Chart (图表)</a></td></tr>' +
                         '<tr><td class="ie6-cell">📝 <a href="https://medium.com/@pissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Medium Blog (博客)</a></td></tr>' +
                     '</table>' +
                     '<div style="background: rgba(255,255,255,0.5); border: 1px solid #aabbcc; padding: 6px; margin: 8px 0; font-size: 11px;">' +
