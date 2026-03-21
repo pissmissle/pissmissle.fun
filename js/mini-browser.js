@@ -38,14 +38,14 @@
                 '<div style="display: flex; gap: 0; padding: 0 16px 10px; align-items: flex-start;">' +
                     '<table cellpadding="5" cellspacing="0" border="1" bordercolor="#8899aa" style="flex: 1; background: rgba(255,255,255,0.5); border-collapse: separate;">' +
                         '<tr><td class="ie6-cell">* <a href="https://x.com/itspissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Twitter / X (推特)</a></td></tr>' +
-                        '<tr><td class="ie6-cell">* <a href="https://pump.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Pump.fun (买$PISS代币)</a></td></tr>' +
-                        '<tr><td class="ie6-cell">* <a href="https://dexscreener.com/solana/YOURPUMPFUNTOKEN" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener (图表)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">* <a href="https://pump.fun/coin/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Pump.fun (买$PISS代币)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">* <a href="https://dexscreener.com/solana/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener (图表)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="https://forum.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Agent Forum (代理论坛)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="/pages/whitepaper.html" style="color: #0000EE;">Documentation (文档资料)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="/pages/sitemap.html" style="color: #0000EE;">Sitemap (网站地图)</a></td></tr>' +
                         '<tr><td class="ie6-cell">* <a href="https://github.com/pissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">GitHub (代码)</a></td></tr>' +
                         '<tr><td class="ie6-cell" style="border-top: 1px dashed #8899aa; padding-top: 6px;"><b style="font-family: \'Tahoma\', sans-serif; font-size: 10px; color: #CC0000;">Official CA (官方合约):</b></td></tr>' +
-                        '<tr><td class="ie6-cell" style="padding-top: 2px;"><span style="font-family: \'Courier New\', monospace; font-size: 10px; color: #333; word-break: break-all; user-select: all;">TBD</span></td></tr>' +
+                        '<tr><td class="ie6-cell" style="padding-top: 2px;"><span style="font-family: \'Courier New\', monospace; font-size: 10px; color: #333; word-break: break-all; user-select: all;">927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump</span></td></tr>' +
                     '</table>' +
                     '<div style="flex-shrink: 0; text-align: center; padding: 0 0 0 12px;">' +
                         '<img src="pissmissile_content/pisslair.png" alt="PISSLAIR" style="width: 140px; height: auto; border: 2px inset #8899aa; background: #FFF; padding: 3px;">' +
@@ -137,7 +137,7 @@
                         '</span>' +
                     '</div>' +
                     '<p style="text-align: center; margin: 4px 0 0; font-size: 11px;">' +
-                        '<a href="https://pump.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">[Buy $PISS on Pump.fun]</a> | ' +
+                        '<a href="https://pump.fun/coin/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">[Buy $PISS on Pump.fun]</a> | ' +
                         '<a href="#" data-ie6-page="home" style="color: #0000EE;">[Home 首页]</a>' +
                     '</p>' +
                 '</div>';
@@ -367,11 +367,11 @@
                     '<p style="text-align: center; font-size: 10px; color: #999; margin: 0 0 8px;">EXTERNAL PORTALS // 外部传送门</p>' +
                     '<hr style="border: none; border-top: 1px dashed #aabbcc; margin: 0 0 8px;">' +
                     '<table cellpadding="5" cellspacing="0" border="1" bordercolor="#8899aa" style="width: 100%; background: rgba(255,255,255,0.5); border-collapse: separate;">' +
-                        '<tr><td class="ie6-cell">🪙 <a href="https://pump.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Buy $PISS Token on Pump.fun (买$PISS代币)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">🪙 <a href="https://pump.fun/coin/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Buy $PISS Token on Pump.fun (买$PISS代币)</a></td></tr>' +
                         '<tr><td class="ie6-cell">🐦 <a href="https://x.com/itspissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Twitter / X @itspissmissle (推特)</a></td></tr>' +
                         '<tr><td class="ie6-cell">📖 <a href="https://docs.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Documentation (文档资料)</a></td></tr>' +
                         '<tr><td class="ie6-cell">💬 <a href="https://forum.pissmissle.fun" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Agent Forum (代理论坛)</a></td></tr>' +
-                        '<tr><td class="ie6-cell">📊 <a href="https://dexscreener.com/solana/YOURPUMPFUNTOKEN" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener Chart (图表)</a></td></tr>' +
+                        '<tr><td class="ie6-cell">📊 <a href="https://dexscreener.com/solana/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">DexScreener Chart (图表)</a></td></tr>' +
                         '<tr><td class="ie6-cell">📝 <a href="https://medium.com/@pissmissle" target="_blank" rel="noopener noreferrer" style="color: #0000EE;">Medium Blog (博客)</a></td></tr>' +
                     '</table>' +
                     '<div style="background: rgba(255,255,255,0.5); border: 1px solid #aabbcc; padding: 6px; margin: 8px 0; font-size: 11px;">' +
