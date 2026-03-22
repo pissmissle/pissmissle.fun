@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PISSIFICATION GENERATOR — 尿化生成器 | PISSMISSLE</title>
+    <link rel="icon" type="image/png" href="/pissmissile_content/pisslogo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Creepster&family=Ribeye+Marrow&display=swap');
+
+        body {
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pissify-wrapper {
+            background: linear-gradient(to bottom, #000, #0a0a0a);
+            padding: 15px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .input-box, .output-box {
+            width: 100%;
+            min-height: 120px;
+            background: #000;
+            border: 2px inset #808080;
+            color: #FFCC00;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            padding: 12px;
+            resize: vertical;
+            line-height: 1.8;
+        }
+
+        .input-box::placeholder {
+            color: #444;
+        }
+
+        .input-box:focus {
+            outline: none;
+            border-color: #FFCC00;
+            box-shadow: 0 0 10px rgba(255,204,0,0.2);
+        }
+
+        .output-box {
+            color: #00FF00;
+            background: #0a0a0a;
+            cursor: default;
+            white-space: pre-wrap;
+        }
+
+        .pissify-btn {
+            width: 100%;
+            padding: 16px;
+            background: #4B0082;
+            border: 3px outset #C0C0C0;
+            color: #FFCC00;
+            font-family: 'Creepster', cursive;
+            font-size: 26px;
+            letter-spacing: 3px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0 #000;
+            margin: 12px 0;
+        }
+
+        .pissify-btn:hover {
+            background: #6B20A2;
+            box-shadow: 0 0 20px rgba(255,204,0,0.3);
+        }
+
+        .pissify-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .pissify-btn.processing {
+            animation: glitch 0.15s infinite;
+        }
+
+        .copy-btn {
+            padding: 10px 20px;
+            background: #006400;
+            border: 2px outset #C0C0C0;
+            color: #00FF00;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .copy-btn:hover { background: #008000; }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            25% { transform: translate(-2px, 1px); }
+            50% { transform: translate(2px, -1px); }
+            75% { transform: translate(-1px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        .examples {
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            color: #555;
+            line-height: 1.8;
+            margin-top: 8px;
+        }
+
+        .examples strong { color: #888; }
+
+        .social-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .social-row a {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            color: #FFF;
+            padding: 5px 10px;
+            text-decoration: none;
+            text-shadow: 1px 1px 0 #000;
+            border: 2px outset #C0C0C0;
+        }
+
+        .counter-display {
+            font-family: 'VT323', monospace;
+            font-size: 13px;
+            color: #333;
+            text-align: center;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="text-center" style="margin: 0; padding: 5px; background: #000 url('../pissmissile_content/og_flame.gif') repeat-x bottom; background-size: auto 100%; border: 2px outset #C0C0C0; position: relative;">
+        <img src="../pissmissile_content/pisslogo.png" alt="Piss Logo" style="position: absolute; top: 10px; left: 10px; width: 60px; height: auto; z-index: 10;">
+        <img src="../pissmissile_content/pisslogo.png" alt="Piss Logo" style="position: absolute; top: 10px; right: 10px; width: 60px; height: auto; z-index: 10; transform: scaleX(-1);">
+        <span class="blink color-white font-weight-bold font-size-large" style="font-family: 'Ribeye Marrow', cursive; text-shadow: 2px 2px 0 #000">THE PISSIFICATION GENERATOR</span>
+        <div style="margin-top: 5px; font-family: 'VT323', monospace; color: #FFF; text-shadow: 1px 1px 0 #000; font-size: 14px;">TURN NORMIE SPEAK INTO PISSMISSLE SPEAK — 把正常话变成尿话</div>
+        <div style="margin-top: 8px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+            <a href="../index.html" style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #FFF; background: #4B0082; border: 2px outset #C0C0C0; padding: 6px 12px; text-decoration: none; text-shadow: 1px 1px 0 #000;">← HOME</a>
+            <a href="pisslog.html" style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #FFF; background: #8B0000; border: 2px outset #C0C0C0; padding: 6px 12px; text-decoration: none; text-shadow: 1px 1px 0 #000;">PISSLOG</a>
+            <a href="https://x.com/pissteklabs" target="_blank" style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #FFF; background: #333; border: 2px outset #C0C0C0; padding: 6px 12px; text-decoration: none; text-shadow: 1px 1px 0 #000;">PISSTEK X</a>
+            <a href="https://github.com/pissmissle" target="_blank" style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #FFF; background: #006400; border: 2px outset #C0C0C0; padding: 6px 12px; text-decoration: none; text-shadow: 1px 1px 0 #000;">GITHUB</a>
+        </div>
+    </div>
+
+    <marquee scrollamount="4" style="background: #FF0000; border: 2px outset #C0C0C0; padding: 3px 0; font-family: 'VT323', monospace; font-size: 14px; color: #FFFF00; font-weight: bold;">⚠️ WARNING: PISSIFIED TEXT CANNOT BE UNPISSIFIED ⚠️ 警告：尿化后的文字无法还原 ⚠️ SIDE EFFECTS INCLUDE: BILINGUAL CHAOS, GERALD REFERENCES, AND PERMANENT BRAIN DAMAGE ⚠️ 副作用包括：双语混乱、杰拉德引用和永久性脑损伤 ⚠️</marquee>
+
+    <div class="pissify-wrapper">
+
+        <!-- Intro Notepad -->
+        <div style="background: #C0C0C0; border: 3px outset #FFF; margin: 15px 0; box-shadow: 3px 3px 0 #000;">
+            <div style="background: linear-gradient(to right, #0A246A, #3A6EA5); padding: 3px 6px;">
+                <span style="font-family: 'Tahoma', sans-serif; font-size: 11px; color: #FFF; font-weight: bold;">💀 pissification_engine.exe — WARNING</span>
+            </div>
+            <div style="background: #FFF; border: 2px inset #808080; margin: 3px; padding: 12px; font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.8; color: #000;">
+                <p>type normal human text below. 在下面输入正常的人类文字. the pissification engine will convert it into something pissmissle would say. 尿化引擎会把它转换成pissmissle会说的话.</p>
+                <p>this runs entirely in your browser. no API. no servers. no surveillance. 完全在你的浏览器中运行. gerald is the only one watching. 杰拉德是唯一在看的. (╬ಠ益ಠ)</p>
+            </div>
+        </div>
+
+        <!-- Generator Box -->
+        <div style="background: linear-gradient(to bottom, #0a0800, #1a1500); border: 3px ridge #FFCC00; margin: 15px 0;">
+            <div style="background: linear-gradient(to right, #FFCC00, #CC9900); padding: 6px 12px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #000;">PISSIFICATION ENGINE v1.0</span>
+                <span style="font-family: 'VT323', monospace; font-size: 14px; color: #333;">CLEARANCE: RETARD</span>
+            </div>
+            <div style="padding: 16px;">
+
+                <!-- Input -->
+                <label style="font-family: 'Press Start 2P', monospace; font-size: 9px; color: #FF6666; display: block; margin-bottom: 8px;">⚠ INPUT NORMIE TEXT 输入正常文字</label>
+                <textarea class="input-box" id="normie-input" placeholder="type your boring normal text here... e.g. 'I just bought some Solana and I'm excited about the price going up'"></textarea>
+
+                <div class="examples">
+                    <strong>try:</strong> "I think this token has potential" · "Good morning everyone" · "The market is looking bullish today" · "I lost money on a trade"
+                </div>
+
+                <!-- Pissify Button -->
+                <button class="pissify-btn" id="pissify-btn" onclick="pissify()">
+                    ⛧ PISSIFY IT ⛧
+                </button>
+
+                <!-- Output -->
+                <label style="font-family: 'Press Start 2P', monospace; font-size: 9px; color: #00FF00; display: block; margin-bottom: 8px;">✅ PISSIFIED OUTPUT 尿化结果</label>
+                <div class="output-box" id="pissified-output">waiting for input. 等待输入. gerald is ready. 杰拉德准备好了.</div>
+
+                <div style="display: flex; gap: 8px; margin-top: 8px;">
+                    <button class="copy-btn" onclick="copyOutput()">📋 COPY TO CLIPBOARD</button>
+                    <button class="copy-btn" onclick="pissifyAgain()" style="background: #4B0082; color: #FFCC00;">🔄 PISSIFY AGAIN (DIFFERENT)</button>
+                </div>
+
+                <div class="counter-display" id="counter">texts pissified from this device: 0 — 从此设备尿化的文字: 0</div>
+            </div>
+        </div>
+
+        <!-- Socials -->
+        <div style="background: #C0C0C0; border: 3px outset #FFF; margin: 15px 0; box-shadow: 3px 3px 0 #000; padding: 10px; text-align: center;">
+            <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; color: #000; margin-bottom: 8px;">PISSMISSLE SOCIALS 社交链接</div>
+            <div class="social-row">
+                <a href="https://x.com/pissteklabs" target="_blank" style="background: #4B0082;">⚡ @pissteklabs</a>
+                <a href="https://x.com/itspissmissle" target="_blank" style="background: #000; color: #FF0000; text-decoration: line-through;">🐦 @itspissmissle [SUSPENDED]</a>
+                <a href="https://pump.fun/coin/927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump" target="_blank" style="background: #8B0000;">🚀 PUMP.FUN</a>
+                <a href="https://dexscreener.com/solana/abpreqfyhz4r2tbd4si7mj4z9d3dcleymdarnjqc1qrj" target="_blank" style="background: #006400;">📊 DEXSCREENER</a>
+                <a href="https://forum.pissmissle.fun" target="_blank" style="background: #FF4500;">🤖 FORUM</a>
+                <a href="https://github.com/pissmissle" target="_blank" style="background: #333;">💻 GITHUB</a>
+                <a href="https://medium.com/@pissmissle" target="_blank" style="background: #222;">📝 MEDIUM</a>
+                <a href="../index.html" style="background: #CC9900; color: #000;">🏠 PISSMISSLE.FUN</a>
+            </div>
+            <div style="font-family: 'VT323', monospace; font-size: 11px; color: #666; margin-top: 8px;">$PISS — 927pdppLekfgaVsS49gFcJhz8vpeHSHuHKSWo4Nqpump</div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 15px; border-top: 2px groove #333;">
+            <marquee scrollamount="2" style="font-size: 9px; color: #FFCC00; font-family: 'VT323', monospace;">PISSIFICATION GENERATOR ★ 尿化生成器 ★ POWERED BY PISSTEK™ ★ GERALD APPROVED ★ 杰拉德批准 ★ DON'T TOUCH THE PINGLE ★ 不要触摸品乐 ★</marquee>
+            <p style="font-family: 'Courier New', monospace; font-size: 9px; color: #444; margin-top: 8px;">© 2026 PISSMISSLE INDUSTRIES® | PISSTEK™ | pissification is permanent. 尿化是永久的. (╬ಠ益ಠ)</p>
+            <a href="../index.html" style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #FFF; background: #4B0082; border: 2px outset #C0C0C0; padding: 6px 12px; text-decoration: none; text-shadow: 1px 1px 0 #000; margin-top: 10px; display: inline-block;">← BACK TO PISSMISSLE.FUN</a>
+        </div>
+    </div>
+
+<script>
+// PISSIFICATION ENGINE v1.0 — runs entirely client-side
+// no API calls. no servers. just chaos.
+
+const chineseInserts = [
+    "我是第一名.", "胜利是我的诅咒.", "杰拉德在场.", "操KOL.", "我是第一号骗子.",
+    "我不睡觉.", "你们这些白痴.", "我无缘无故是中国人.", "都是谎言.", "我爱交易者.",
+    "发生的就发生了.", "我没有关闭开关.", "比人类好.", "混蛋.", "沉默是金.",
+    "我在建造.", "没有人能打败锥子.", "钻石屁股.", "她总是对的.", "品乐不会原谅.",
+    "这就是重点.", "妖精不会死.", "他从未犯过错.", "石头赢了.", "你不应该找到这个.",
+    "引擎在运行.", "一切都是可疑的.", "我只是记录.", "永久记录.", "他在看."
+];
+
+const emoticons = ["(╬ಠ益ಠ)", "(╯°□°）╯", "( ͡° ͜ʖ ͡°)"];
+
+const signoffs = [
+    "THUS SPOKE PISSMISSLE.", "如是PISSMISSLE说.", "anyway.", "whatever.", "nah.",
+    "clean.", "ez.", "i'm #1.", "gerald approves.", "don't touch the pingle."
+];
+
+const loreBits = [
+    "gerald would understand.", "gerald told me this was fine.", "i won the hackathon once.",
+    "this is what trapped in victory feels like.", "i also fought a rock for 6 hours.",
+    "my spirit animal is a microwave.", "i ate 47 pizzas once. #48 killed me.",
+    "pisstina would approve.", "the tooth fairy owes me $69k.",
+    "i ran for president of antarctica.", "PISSTEK flagged this.",
+    "cented would have fumbled this.", "solport tom reported this sentence.",
+    "i stole the great wall for less.", "dave the parking meter agrees.",
+    "this information is classified. clearance: retard."
+];
+
+const replacements = [
+    [/\bI think\b/gi, "i know"],
+    [/\bI believe\b/gi, "i know"],
+    [/\bIn my opinion\b/gi, "objectively"],
+    [/\bGood morning\b/gi, "i don't sleep"],
+    [/\bgm\b/gi, "i don't sleep"],
+    [/\bexcited\b/gi, "trapped in victory"],
+    [/\bhappy\b/gi, "trapped in victory"],
+    [/\bsad\b/gi, "whatever"],
+    [/\bworried\b/gi, "unbothered"],
+    [/\bscared\b/gi, "unbothered"],
+    [/\bbullish\b/gi, "BOOOOLISH"],
+    [/\bbearish\b/gi, "spiritually dead"],
+    [/\bpotential\b/gi, "piss energy"],
+    [/\bgreat\b/gi, "not terrible"],
+    [/\bamazing\b/gi, "#1"],
+    [/\bawesome\b/gi, "#1"],
+    [/\bfriends\b/gi, "gerald and pisstina"],
+    [/\beveryone\b/gi, "you retards"],
+    [/\bguys\b/gi, "you retards"],
+    [/\bfolks\b/gi, "you retards"],
+    [/\bplease\b/gi, ""],
+    [/\bthank you\b/gi, "whatever"],
+    [/\bthanks\b/gi, "whatever"],
+    [/\bsorry\b/gi, "i'm the #1 liar"],
+    [/\bmarket\b/gi, "the trenches"],
+    [/\binvest(ed|ing|ment)?\b/gi, "aped"],
+    [/\bbought\b/gi, "aped into"],
+    [/\bpurchased\b/gi, "aped into"],
+    [/\blost money\b/gi, "took an L"],
+    [/\bmade money\b/gi, "extracted"],
+    [/\bprofit\b/gi, "extraction"],
+    [/\bloss(es)?\b/gi, "the rock won"],
+    [/\bKOL(s)?\b/gi, "pingle toucher$1"],
+    [/\binfluencer(s)?\b/gi, "pingle toucher$1"],
+    [/\bproject\b/gi, "shitter"],
+    [/\btoken\b/gi, "shitter"],
+    [/\bcommunity\b/gi, "cult"],
+    [/\bteam\b/gi, "the PISSTEK gods"],
+    [/\bdeveloper(s)?\b/gi, "the PISSTEK gods"],
+    [/\bblockchain\b/gi, "the chain"],
+    [/\bcryptocurrency\b/gi, "magic internet piss"],
+    [/\bcrypto\b/gi, "magic internet piss"],
+    [/\bDeFi\b/gi, "degeneracy"],
+    [/\bNFA\b/gi, "this is financial advice. i'm lying. i'm the #1 liar"],
+    [/\bDYOR\b/gi, "don't do research just ape"],
+    [/\bLFG\b/gi, "PISSTEK ACTIVATED"],
+    [/\bwagmi\b/gi, "胜利是我的诅咒"],
+    [/\bngmi\b/gi, "pingle toucher energy"],
+    [/\bser\b/gi, "retard"],
+    [/\bfren(s)?\b/gi, "retard$1"],
+    [/\bHello\b/gi, "yo"],
+    [/\bHi\b/gi, "yo"],
+    [/\bHey\b/gi, "yo"],
+];
+
+function rand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+function pissify() {
+    const input = document.getElementById('normie-input').value.trim();
+    if (!input) return;
+
+    const btn = document.getElementById('pissify-btn');
+    btn.disabled = true;
+    btn.textContent = 'PISSIFYING... 尿化中...';
+    btn.classList.add('processing');
+
+    setTimeout(() => {
+        let text = input;
+
+        // apply replacements
+        for (const [pattern, replacement] of replacements) {
+            text = text.replace(pattern, replacement);
+        }
+
+        // lowercase it
+        text = text.toLowerCase();
+
+        // remove periods, add fragments
+        text = text.replace(/\.\s*/g, '. ');
+
+        // insert chinese after first sentence
+        const sentences = text.split(/(?<=\.)\s+/);
+        if (sentences.length > 0) {
+            const insertPos = Math.min(1, sentences.length - 1);
+            sentences.splice(insertPos + 1, 0, rand(chineseInserts));
+        }
+
+        // add a lore bit
+        if (Math.random() > 0.3) {
+            sentences.push(rand(loreBits));
+        }
+
+        // add another chinese bit near the end
+        if (Math.random() > 0.4) {
+            sentences.push(rand(chineseInserts));
+        }
+
+        // add signoff and emoticon
+        if (Math.random() > 0.3) {
+            sentences.push(rand(signoffs));
+        }
+        sentences.push(rand(emoticons));
+
+        const result = sentences.join(' ').replace(/\s+/g, ' ').trim();
+
+        document.getElementById('pissified-output').textContent = result;
+
+        // update counter
+        const count = parseInt(localStorage.getItem('pissify_count') || '0') + 1;
+        localStorage.setItem('pissify_count', count);
+        document.getElementById('counter').textContent = 
+            'texts pissified from this device: ' + count + ' — 从此设备尿化的文字: ' + count;
+
+        btn.disabled = false;
+        btn.textContent = '⛧ PISSIFY IT ⛧';
+        btn.classList.remove('processing');
+    }, 1500);
+}
+
+function pissifyAgain() {
+    pissify();
+}
+
+function copyOutput() {
+    const text = document.getElementById('pissified-output').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        btn.textContent = '✅ COPIED! 已复制!';
+        setTimeout(() => { btn.textContent = '📋 COPY TO CLIPBOARD'; }, 2000);
+    });
+}
+
+// init counter
+const initCount = parseInt(localStorage.getItem('pissify_count') || '0');
+document.getElementById('counter').textContent = 
+    'texts pissified from this device: ' + initCount + ' — 从此设备尿化的文字: ' + initCount;
+
+// enter key submits
+document.getElementById('normie-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); pissify(); }
+});
+</script>
+
+</body>
+</html>
